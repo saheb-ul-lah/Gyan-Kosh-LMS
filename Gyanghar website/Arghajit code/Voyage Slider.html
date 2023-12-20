@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<!-- saved from url=(0087)http://127.0.0.1:5500/Gyanghar%20website/Arghajit%20code/Photo%20Gallery%201/index.html -->
+<html lang="en"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+  
+  <title>Voyage Slider</title>
+  <link rel="stylesheet" href="./Voyage Slider_files/all.min.css">
+	<link rel="stylesheet" href="./Voyage Slider_files/css">
+	<link rel="stylesheet" href="./Voyage Slider_files/style.css">
+</head>
+<body>
+<div class="app">
+	<div class="cardList">
+		<button class="cardList__btn btn btn--left" style="opacity: 1; pointer-events: all;">
+			<div class="icon">
+				<svg>
+					<use xlink:href="#arrow-left"></use>
+				</svg>
+			</div>
+		</button>
+
+		<div class="cards__wrapper">
+			<div class="card previous--card" style="--card-translateY-offset: 0%; --current-card-rotation-offset: 0; z-index: 50;">
+				<div class="card__image">
+					<img src="./Voyage Slider_files/Adobe Scan 20 Dec 2023_2.jpg" alt="">
+				</div>
+			</div>
+
+			<div class="card current--card" style="--card-translateY-offset: 0%; z-index: 30; --current-card-rotation-offset: 0;">
+				<div class="card__image">
+					<img src="./Voyage Slider_files/Adobe Scan 20 Dec 2023_1.jpg" alt="">
+				</div>
+			</div>
+
+			<div class="card next--card" style="--card-translateY-offset: 0%; z-index: 20; --current-card-rotation-offset: 0;">
+				<div class="card__image">
+					<img src="./Voyage Slider_files/Adobe Scan 20 Dec 2023_3.jpg" alt="">
+				</div>
+			</div>
+		</div>
+
+		<button class="cardList__btn btn btn--right" style="opacity: 1; pointer-events: all;">
+			<div class="icon">
+				<svg>
+					<use xlink:href="#arrow-right"></use>
+				</svg>
+			</div>
+		</button>
+	</div>
+
+	<div class="infoList">
+		<div class="info__wrapper">
+			<div class="info previous--info" style="transform: translate3d(0px, 0px, 32px);">
+				<h1 class="text name" style="opacity: 0; transform: translate(0px, -120px);">Floor</h1>
+				<h4 class="text location" style="opacity: 0; transform: translate(0px, -120px);">Ground</h4>
+				<p class="text description" style="opacity: 0; transform: translate(0px, -120px);">"Knowledge Unleashed, Futures Soared."
+				</p>
+			</div>
+
+			<div class="info current--info" style="transform: translate3d(0px, 0px, 32px);">
+				<h1 class="text name" style="transform: translate(0px, 0px); opacity: 1;">Floor</h1>
+				<h4 class="text location" style="transform: translate(0px, 0px); opacity: 1;">1st</h4>
+				<p class="text description" style="transform: translate(0px, 0px); opacity: 1;">"Inspire. Learn. Succeed."
+				</p>
+			</div>
+
+			<div class="info next--info">
+				<h1 class="text name" style="transform: translate(0px, -120px); opacity: 0;">Floor</h1>
+				<h4 class="text location" style="transform: translate(0px, -120px); opacity: 0;">2nd</h4>
+				<p class="text description" style="transform: translate(0px, -120px); opacity: 0;">"Explore.&nbsp;Learn.&nbsp;Thrive."</p>
+			</div>
+		</div>
+	</div>
+	<div class="app__bg">
+		<div class="app__bg__image previous--image" style="z-index: -2;">
+			<img src="./Voyage Slider_files/w (1).png" alt="">
+		</div>
+		<div class="app__bg__image current--image" style="z-index: -1;">
+			<img src="./Voyage Slider_files/w (2).png" alt="">
+		</div>
+		<div class="app__bg__image next--image" style="z-index: -2;">
+			<img src="./Voyage Slider_files/w (3).png" alt="">
+		</div>
+	</div>
+</div>
+
+<div class="loading__wrapper" style="pointer-events: none; opacity: 0;">
+	<div class="loader--text">Please Wait...</div>
+	<div class="loader">
+		<span style="background-color: rgb(0, 255, 0); transform: translate(0px, 0px);"></span>
+	</div>
+</div>
+
+
+<svg class="icons" style="display: none;">
+	<symbol id="arrow-left" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
+		<polyline points="328 112 184 256 328 400" style="fill:none;stroke:#fff;stroke-linecap:round;stroke-linejoin:round;stroke-width:48px"></polyline>
+	</symbol>
+	<symbol id="arrow-right" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
+		<polyline points="184 112 328 256 184 400" style="fill:none;stroke:#fff;stroke-linecap:round;stroke-linejoin:round;stroke-width:48px"></polyline>
+	</symbol>
+</svg>
+  <script src="./Voyage Slider_files/imagesloaded.pkgd.min.js.download"></script>
+<script src="./Voyage Slider_files/gsap.min.js.download"></script><script src="./Voyage Slider_files/script.js.download"></script>
+
+<!-- Code injected by live-server -->
+<script>
+	// <![CDATA[  <-- For SVG support
+	if ('WebSocket' in window) {
+		(function () {
+			function refreshCSS() {
+				var sheets = [].slice.call(document.getElementsByTagName("link"));
+				var head = document.getElementsByTagName("head")[0];
+				for (var i = 0; i < sheets.length; ++i) {
+					var elem = sheets[i];
+					var parent = elem.parentElement || head;
+					parent.removeChild(elem);
+					var rel = elem.rel;
+					if (elem.href && typeof rel != "string" || rel.length == 0 || rel.toLowerCase() == "stylesheet") {
+						var url = elem.href.replace(/(&|\?)_cacheOverride=\d+/, '');
+						elem.href = url + (url.indexOf('?') >= 0 ? '&' : '?') + '_cacheOverride=' + (new Date().valueOf());
+					}
+					parent.appendChild(elem);
+				}
+			}
+			var protocol = window.location.protocol === 'http:' ? 'ws://' : 'wss://';
+			var address = protocol + window.location.host + window.location.pathname + '/ws';
+			var socket = new WebSocket(address);
+			socket.onmessage = function (msg) {
+				if (msg.data == 'reload') window.location.reload();
+				else if (msg.data == 'refreshcss') refreshCSS();
+			};
+			if (sessionStorage && !sessionStorage.getItem('IsThisFirstTime_Log_From_LiveServer')) {
+				console.log('Live reload enabled.');
+				sessionStorage.setItem('IsThisFirstTime_Log_From_LiveServer', true);
+			}
+		})();
+	}
+	else {
+		console.error('Upgrade your browser. This Browser is NOT supported WebSocket for Live-Reloading.');
+	}
+	// ]]>
+</script>
+
+</body></html>

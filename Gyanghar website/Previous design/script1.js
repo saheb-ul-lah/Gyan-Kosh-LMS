@@ -1,0 +1,123 @@
+gsap.from("#page-0",{
+    scale:0.9,
+    // delay:1,
+    duration:4,
+})
+gsap.from("#gyan-kosh",{
+    // x:-50,
+    scale:1.2,
+    delay:1.5,
+    duration:1,
+})
+gsap.from("#gyan-kosh-slogan",{
+    x:500,
+    delay:0.5,
+    duration:1,
+})
+gsap.from("#bg-img",{
+    y:-1000,
+    delay:4,
+    duration:0.8
+})
+gsap.from("#nav-bar",{
+    y:-100,
+    delay:4.8,
+    duration:1.5
+})
+gsap.from("#nav-log-in",{
+    scale:1.1,
+    repeat:-1,
+    yoyo:true,
+    delay:5.5,
+    duration:0.8
+})
+gsap.from("#profile-pic",{
+    // y:-100,
+    // x:100,
+    scale:1.1,
+    rotate:10,
+    delay:3.5,
+    duration:3,
+    repeat:-1,
+    yoyo:true,
+})
+gsap.from("#menu-buttons h1",{
+    x:100,
+    delay:4.8,
+    duration:0.9,
+    rotate:180,
+})
+gsap.from("#page-1-option",{
+    scale:1.5,
+    delay:5,
+    duration:1,
+})
+gsap.from("#search-bar",{
+    scale:0,
+    delay:6,
+    duration:1,
+})
+gsap.from("#search-icon-1",{
+    scale:0,
+    delay:6,
+    duration:1,
+})
+gsap.from("#search-icon-2",{
+    scale:0,
+    delay:6,
+    duration:1,
+})
+gsap.from("#page-1-logo-DA",{
+    scale:1.8,
+    delay:6,
+    duration:0.5,
+})
+gsap.from("#page-1-logo-DU",{
+    x:-1000,
+    rotate:180,
+    scale:1.2,
+    delay:5,
+    duration:8,
+    repeat:-1,
+    yoyo:true,
+})
+
+gsap.from("#headlines",{
+    x:-1000,    
+    delay:5,
+    duration:8,
+    yoyo:true,
+    repeat:-1,
+})
+
+// -------------------------
+gsap.from("#div-1-1",{
+    x:-1000,    
+    delay:15,
+    duration:1,
+})
+gsap.from("#div-1-2",{
+    scale:1.5,
+    delay:15,
+    duration:1,
+})
+gsap.from("#div-1-3",{
+    x:1000,
+    delay:15,
+    duration:1,
+})
+gsap.from("#div-2-1",{
+    x:-1000,
+    delay:15,
+    duration:1,
+})
+gsap.from("#div-2-2",{
+    scale:1.5,
+    delay:15,
+    duration:1,
+})
+gsap.from("#div-2-3",{
+    x:1000,
+    delay:15,
+    duration:1,
+})

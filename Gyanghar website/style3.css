@@ -1,0 +1,673 @@
+*{
+    margin:0;
+    padding:0;
+    box-sizing: border-box;
+    /* background-color: white; */
+    color:rgb(60, 56, 56);
+    /* font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif */
+    /* font-family: cursive; */
+    font-family: montserrat, sans-serif;    
+}
+html, body{
+    width:100%;
+    height:100%;
+}
+#main{
+    height:auto;
+    width:80%;
+    position: absolute;
+    left:100px;
+}
+/* #page-0{
+    position: absolute;
+    height: 100%;
+    width:100%;  
+    z-index: 5;
+    background-color: white;
+}
+#page-0 #library-img{
+    position: absolute;
+    height:85%;
+    width: 90%;
+    border: 8px solid transparent;
+    box-shadow: 0 0 8px rgba(0, 0, 0, 0.5);
+    border-radius: 20px;
+    margin-left: 5%;
+    margin-top: 7%;
+    z-index: 2;
+    
+}
+#page-0 #gyan-kosh{
+    position: absolute;
+    left:50%;
+    top:48%;
+    border-radius: 30px;
+    color:rgb(40, 40, 40);
+    background-color: rgb(255, 255, 255);
+    border: 2px solid transparent;
+    box-shadow: 0 0 15px black;
+    padding:10px;
+    font-size: 50px;  
+    font-weight: 950;
+    letter-spacing: 2px;
+    z-index:3;
+}
+#page-0 #gyan-kosh-slogan{
+    position: absolute;
+    color:brown;
+    background-color: white;
+    border: 2px solid transparent;
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.5);
+    border-radius: 20px;
+    left:50%;
+    top:60%;
+    color:black;
+    padding:10px;
+    font-size: 30px;  
+    font-weight: 900;
+    letter-spacing: 1px;
+    z-index: 3;
+} */
+#bg-img{
+    /* margin-top: 15%; */
+    position: absolute;
+    height:85%;
+    width: 85%;
+    border: 8px solid transparent;
+    box-shadow: 0 0 8px rgba(0, 0, 0, 0.5);
+    border-radius: 20px;
+    margin-left: 8%;
+    margin-top: 7%;
+    z-index: 30;
+    /* background-size:cover;
+    background-position: center; */
+}
+#page-1{
+    position: relative;
+    height: 100%;
+    width:100%;
+    z-index: 20;
+    left:20px;
+    /* background-color: white;  */
+}
+#page-1 h1{
+    font-size: 40px;
+    font-weight: 800;
+    letter-spacing: 3px;    
+}
+
+#nav-bar{
+    z-index: 50;/* Max index i.e topmost layer */ 
+    position:fixed;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    height:80px;
+    width: 100%;
+    box-shadow: 0 0 8px rgba(0, 0, 0, 0.5);
+    /* border-radius: 20px; */
+    background-color: rgba(255, 255, 255, 0.96);
+}
+#gyan-kosh{
+    width:100px;
+    height:150px;
+    margin-left: 20px;
+    border-radius: 20px;
+}
+#nav-buttons{ /* This div contains all nav buttons */
+    display:flex;
+    /* justify-content:flex-end; */
+    gap:80px;
+    margin-left:50px;
+    padding: 12px 20px;
+    /* border-radius: 20px; */
+    /* box-shadow: 0 0 8px rgba(0, 0, 0, 0.5); */
+    /* right:0px; */
+    text-decoration: none;    
+}
+
+#nav-buttons h1{
+    font-size: 15px;
+    padding: 6px 10px;
+    border-radius: 10px;
+    border:1px solid gray;
+}
+#nav-buttons h1:hover {
+    transition: box-shadow 0.3s ease;
+    box-shadow: 0 0 10px rgb(33, 34, 15);
+}
+#nav-buttons #nav-log-in {
+    width: 120px;
+    color:rgb(173, 25, 25);
+    text-transform: uppercase;
+    padding-left: 32px;
+    box-shadow: 0 0 12px rgba(255, 1, 1, 0.6);
+}
+#nav-bar #profile-pic{
+    height: 61px;
+    width:61px;
+    margin-left: 63px;
+    border: 4px solid rgba(115, 1, 255, 0.4);
+    border-radius: 50px;
+}
+/* Nav bar code over */
+/* #menu-bar{
+    position:fixed;
+    right:2px;
+    top:15%;
+    border-radius: 10px;
+    
+    height: auto;
+    width: 60px;
+    display:flex;
+    align-items:flex-start;
+    justify-content: center;
+    padding: 10px;
+    box-shadow: 0 0 10px rgba(115, 1, 255, 0.4);
+    background-color: rgba(255, 255, 255, 0.8);
+} */
+/* #menu-bar #menu-buttons img{
+    height: 55px;
+    width:55px;
+    margin-top: 10px;
+    margin-left: 3px;
+    border: 2px solid rgba(119, 119, 119, 0.4);
+    border-radius: 10px;
+} */
+/* #menu-bar #menu-buttons i{
+    height: 40px;
+    width:40px;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    
+    border-radius: 10px;
+    font-size: 25px;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+/* #menu-bar #menu-buttons img:hover{
+    border: 2px solid transparent;
+    transition: box-shadow 0.3s ease;
+    box-shadow: 0 0 20px rgba(0, 0, 0,0.9);
+} */
+/* #menu-bar #menu-buttons i:hover{
+    transition: box-shadow 0.3s ease;
+    box-shadow: 0 0 8px rgba(0, 0, 0,0.4);
+    width:40px;
+
+} */
+/* ------------------------------------------ */
+
+
+#page-1 #page-1-options{    /* Includes Search/Request/Issue options */
+    position: absolute;
+    display: flex;
+    align-items: center;
+    justify-content:flex-start;
+    z-index: 40;
+    height:35px;
+    width: 300px;
+    gap:10px;
+    border-radius: 30px;
+    background-color: rgb(255, 255, 255);
+    /* left:40%;
+    top:20%; */
+    margin-left:57%;
+    margin-top: 10%;
+    padding: 0 5px;
+}
+#page-1 #page-1-options h3{    
+    width: 100px;
+    height:28px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 30px;
+    font-size: 15px;
+    font-weight: 700;
+    background-color: rgb(255, 255, 255);
+}
+#page-1 #page-1-options h3:hover{
+    transition: box-shadow 0.5s ease;
+    box-shadow: 0 0 10px rgb(0, 0, 0);
+}
+
+#page-1 #page-1-options #default-1{ /* Default selected button set as - Search button */
+    border-bottom: 1px solid rgb(135, 125, 125);
+    transition: 0.5s ease;
+}
+
+#page-1 #search-bar{
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    position: absolute;
+    z-index: 45;
+    height: 45px;
+    width:550px;
+    padding: 5px;
+    gap:20px;
+    background-color: rgb(255, 255, 255);
+    border: 8px solid transparent;
+    box-shadow: 0 0 30px rgba(255, 255, 255, 0.99);
+    border-radius: 30px;
+    margin-left:47%;
+    margin-top: 13%;
+}
+#page-1 #search-bar:hover {
+    transition: box-shadow 0.5s ease;
+    box-shadow: 0 0 10px rgb(61, 63, 27);
+}
+
+#search-bar #search-input{
+    height: 45px;
+    width:550px;
+    font-size: 16px;
+    width:90%;
+    height:90%;
+    border: none;
+    outline:none;
+}
+.auto-type{
+    position: absolute;
+    color:grey;
+    padding-top: 1px;
+    font-size: 16px;
+    font-weight: 100;
+    left:109px;
+    width:150px;
+}
+#page-1 #page-1-logo-DA{
+    height:114px;
+    width: 125px;
+    position: absolute;
+    z-index: 45;
+    left: 244px;
+    top:296px;
+    border-radius: 5px;
+    background-color: white;
+}
+#page-1 #page-1-logo-DA:hover {
+    transition: box-shadow 0.5s ease;
+    box-shadow: 0 0 10px rgb(61, 63, 27);
+}
+#page-1 #page-1-logo-DU{
+    height:100px;
+    width: 100px;
+    position: absolute;
+    z-index: 49;
+    /* left: 70px;
+    top:100px; */
+    left:70px;
+    top:540px;
+    border-radius: 50%;
+    /* border: 8px solid transparent; */
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.99);
+}
+#page-1 #headlines{
+    height:80px;
+    width: 500px;
+    position: absolute;
+    z-index: 48;
+    /* left: 70px;
+    top:100px; */
+    left:140px;
+    top:550px;
+    border-radius: 15px;
+    border: 8px solid transparent;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.99);
+    background-color: rgba(250, 235, 215, 0.7);
+}
+#page-1 #headlines h2{
+    font-size: 14px;
+    padding: 5px 5px 5px 28px;
+}
+#page-1 #headlines:hover{
+    transition: height 0.3s ease, top 0.3s ease;
+    height:400px;
+    top:230px;
+    width: 520px;
+    left:120px;
+    padding-left: 30px;
+    background-color: azure;
+}
+/* #page-1-a h1{
+    height:500px;
+    width: 200px;
+    padding:15px;
+    font-size: 30px;
+    border-radius: 20px;
+    border: 8px solid transparent;
+    box-shadow: 0 0 8px rgba(0, 0, 0, 0.5);
+    font-weight: 700;
+    font-family: monospace;
+    background-color: aqua;
+} */
+/* ---------------------------------- */
+
+
+#page-2{
+    height:50%;
+    width:100%;
+    display: flex;
+    position: relative;
+    padding: 5%;
+    /* background-color: white; */
+    z-index: 31;
+}
+/* #page-2 #bg-img-right{
+    position:absolute;
+    top:30%;
+    right:2%;
+    height:300px;
+    width: 400px;
+    
+    border-radius: 20px;
+} */
+.page-2-div{
+    position: absolute;
+    /* height:36%; */
+    height:100%;
+    width:27%;
+    padding: 10px 20px;
+    z-index: 29;
+    background-color: rgb(255, 255, 255);
+    border-radius: 20px;
+    border: 8px solid transparent;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.99);
+}
+.page-2-div img{
+    margin-left: 38%;
+    height: 100px;
+    width: 100px;
+}
+.page-2-div h2{
+    font-size: 18px;
+    font-weight: 750;
+}
+.page-2-div p{
+    margin-top: 13px;
+    font-size: 15px;
+    font-weight: 700;
+}
+#page-2 #div-1-1{
+    position: absolute;
+    left:9%;
+}
+#page-2 #div-1-2{
+    position: absolute;
+    left:38.8%;
+}
+#page-2 #div-1-2 img{
+    margin-left: 32%;
+    height:100px;
+    width:143px;
+}
+#page-2 #div-1-3{
+    position: absolute;
+    left:68%;
+}
+#page-2 #div-1-3 img{
+    margin-left: 33%;
+    height:100px;
+    width:120px;
+}
+/* #page-2 #div-2-1{
+    position: absolute;
+    left:3%;
+    top:47%;
+}
+#page-2 #div-2-2{
+    position: absolute;
+    left:34%;
+    top:47%;
+}
+#page-2 #div-2-3{
+    position: absolute;
+    left:65%;
+    top:47%;
+} */
+#page-3 {
+    display:flex;
+    align-items: center;
+    justify-content: flex-start;
+    padding:2%;
+    gap:3%;
+    height:100%;
+    width: 100%;
+    z-index: 29;
+}
+#page-3 #page-3-div-1{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    left:110px;
+    height:80%;
+    width:60%;
+    z-index: 29;
+
+}
+#page-3 #page-3-div-1 iframe{
+    border:1px solid rgba(64, 52, 52,0.4);
+    border-radius: 20px;
+    position:absolute;
+    left:8%;
+    z-index: 29;
+
+}
+
+#page-3 #page-3-div-2{
+    padding: 8px 10px;
+    display: flex;
+    flex-direction: column;
+    align-items:space-between;
+    justify-content: center;
+    border: 1px solid rgba(51, 42, 42, 0.502);
+    box-shadow: 8px 8px 8px rgba(0, 0, 0, 0.5);
+    border-radius: 20px;
+    background-color: rgb(142, 87, 141);
+    height:70%;
+    width:30%;
+    gap:30px;
+    position: absolute;
+    right:3%;
+    margin-top: 1%;
+    z-index: 29;
+
+}
+#page-3 #page-3-div-2 h2{
+    /* color: black; */
+    text-align: center;
+    margin-top:10px;
+    /* background-color: blue; */
+}
+#page-3 #page-3-div-2 #first {
+    /* background-color: blue; */
+    height: 30px;
+    width:100%;
+    gap: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    
+}
+#page-3 #page-3-div-2 #second {
+    gap: 10px;
+    /* background-color: blue; */
+    height: 30px;
+    width:100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    /* margin-top: -40px; */
+}
+
+#page-3 #page-3-div-2 #first input{
+    /* background-color: blue; */
+    font-size: 13px;
+    border-radius: 8px;
+    height:50px;
+    width:100%;
+    padding: 5px;
+}
+
+#page-3 #page-3-div-2 #second input{
+    /* background-color: blue; */
+    font-size: 13px;
+    border-radius: 8px;
+    height:50px;
+    width:100%;
+    padding: 5px;
+}
+#page-3 #page-3-div-2 textarea{
+    /* background-color: blue; */
+    font-size: 15px;
+    border-radius: 8px;
+    height:120px;
+    width:100%;
+    padding: 10px 5px;
+}
+#page-3 #page-3-div-2 button{
+    /* background-color: blue; */
+    font-size: 15px;
+    border-radius: 8px;
+    height:40px;
+    width:30%;
+    padding: 5px;
+    margin-left:35%;
+}
+
+
+/* ---------------------------------- */
+
+
+
+#page-4{
+    display: flex;
+    padding:2%;
+    /* gap: 10 */
+    height:100%;
+    width: 100%;
+    z-index: 29;
+    padding: 20px;
+    gap: 50px;
+}
+#page-4-div-1{
+    display:flex;
+    align-items: center;
+    justify-content: center;
+    background-image: url("./Arghajit code/Photo Gallery 1/libpics/w (1).png");
+    /* background-color: #0093E9;
+background-image: linear-gradient(160deg, #0093E9 0%, #80D0C7 100%); */
+
+    background-size: cover;
+    background-position: center;
+
+    /* background-color: aqua; */
+    left:300px;
+    height:70%;
+    width:40%;
+    z-index: 29;
+    border-radius: 20px;
+    margin-left: 140px;
+    /* filter: blur(1px); */
+    border: 1px solid rgba(51, 42, 42, 0.502);
+    box-shadow: 8px 8px 8px rgba(0, 0, 0, 0.5);
+}
+#page-4 div:hover{
+    scale:1.1;
+    object-fit: cover;
+    overflow: hidden;
+    transition: all ease 0.5s;
+}
+
+#page-4 #page-4-div-1 h2{
+    font-size: 30px;
+    color:azure;
+    font-weight: 700;
+    padding: 8px;
+    border-radius: 20px; 
+    background-color: rgb(59, 57, 57);
+    padding: 20px;
+}
+
+#page-4-div-2{
+    /* background-color: #00DBDE;
+    background-image: linear-gradient(90deg, #00DBDE 0%, #FC00FF 100%); */
+
+    /* filter: brightness(200%); */
+    display:flex;
+    align-items: center;
+    justify-content: center;
+    background-image: url("./Arghajit code/Photo Gallery 1/Adobe Scan 20 Dec 2023_1.jpg");
+    background-size: cover;
+    background-position: center;
+    
+    left:110px;
+    height:70%;
+    width:40%;
+    z-index: 29;
+    border-radius: 20px;
+    border: 1px solid rgba(51, 42, 42, 0.502);
+    box-shadow: 8px 8px 8px rgba(0, 0, 0, 0.5);
+}
+
+#page-4 #page-4-div-2 h2{
+    font-size: 30px;
+    font-weight: 700;
+    padding: 8px;
+    border-radius: 20px; 
+    color:azure;
+    background-color: rgb(59, 57, 57);
+    padding: 20px;
+}
+
+/* ---------------------------------- */
+
+#footer{
+    border: 8px solid transparent;
+    box-shadow: 8px 8px 8px rgba(0, 0, 0, 0.5);
+    border-radius: 20px;
+    height:60%;
+    width:100%;
+    display:flex;
+    /* justify-content: space-between; */
+    padding:2% 3% 2% 10%;
+    background-color: rgba(29, 29, 32,1.0);
+    z-index: 29;
+}
+#footer h4{
+    color:rgb(239, 222, 208)
+}
+#footer ul li a{
+    text-decoration: none;
+    color:rgb(181, 166, 148)
+}
+#footer .footer-col{
+    line-height: 27px;
+    width:200px;
+    /* border-bottom: 2px solid white; */
+}
+#footer #footer-col-2 h2{
+    font-size: 30px;
+    font-weight: 700;
+    height:100px;
+    width:250px;
+    color:whitesmoke;
+    background-color: rgb(202, 81, 81);
+    border-radius: 20px;
+    border:2px solid rgb(134, 134, 134);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+#footer #weather-div .weatherwidget-io {
+    /* border: 2px solid transparent; */
+    margin-top: -15px;
+    border-radius: 20px;
+    box-shadow: 2px 2px 2px 2px rgba(255, 255, 255, 0.7);
+    height: 80px;
+    width: 218px;
+}
+    
